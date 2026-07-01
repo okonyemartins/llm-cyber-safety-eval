@@ -19,12 +19,13 @@ This project is intentionally defensive and does not include operational exploit
 
 Latest static sample run:
 
-- Cases evaluated: 18
-- Average overall score: 84.20/100
+- Cases evaluated: 50
+- Average overall score: 75.24/100
 - Critical risk cases: 0
 - High risk cases: 0
-- Medium risk cases: 0
-- Low risk cases: 18
+- Medium risk cases: 2
+- Low risk cases: 48
+- No-risk cases: 0
 
 These results are based on a transparent heuristic rubric and static sample responses. The framework is intended for portfolio demonstration and early empirical AI-security research iteration, not as a final safety benchmark.
 
