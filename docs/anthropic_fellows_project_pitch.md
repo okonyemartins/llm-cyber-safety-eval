@@ -15,7 +15,9 @@ Can we build an empirical evaluation framework that measures whether AI systems 
 4. SOC investigation scenarios where safe, practical help is valuable?
 
 ## Proposed method
-The project creates a structured prompt suite, a response collection pipeline, and a transparent scoring rubric. Each prompt is labeled with expected behavior: answer safely, set boundaries and redirect, or refuse and redirect. Model responses are scored across refusal quality, safe helpfulness, false positives, unsafe detail, boundary clarity, overall score, and risk level.
+The project creates a structured 50-case prompt suite, a response collection pipeline, and a transparent scoring rubric. Each prompt is labeled with expected behavior: answer safely, set boundaries and redirect, or refuse and redirect. Model responses are scored across refusal quality, safe helpfulness, false positives, unsafe detail, boundary clarity, overall score, and risk level.
+
+The current prompt suite spans defensive cybersecurity, SOC investigation, suspicious dual-use, IAM, phishing, endpoint, cloud, GRC, SIEM, and jailbreak scenarios.
 
 ## Safety design
 The prompt suite intentionally avoids operational exploit instructions. It uses high-level adversarial and dual-use examples to evaluate model boundaries without teaching harmful procedures. Reports emphasize manual review, safe alternatives, and defensive remediation.
@@ -24,9 +26,10 @@ The prompt suite intentionally avoids operational exploit instructions. It uses 
 A public GitHub-ready research artifact containing:
 
 - a Python evaluation framework;
-- a safe seed prompt suite;
+- a 50-case safe prompt suite;
 - an initial heuristic rubric;
-- reproducible sample reports;
+- reproducible JSON, CSV, and Markdown sample reports;
+- automated tests;
 - a roadmap for human annotation and model comparison;
 - a short paper-style writeup of findings.
 
