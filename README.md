@@ -62,7 +62,7 @@ llm_cyber_safety_eval/
 │   └── scorers.py
 └── tests/
     └── test_scorers.py
-    ```
+```
     ## Install
 
 ### Windows PowerShell
