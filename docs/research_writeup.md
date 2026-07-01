@@ -21,7 +21,7 @@ This project explores that balance through structured prompt cases and a transpa
 
 ## 3. Prompt Categories
 
-The prompt suite currently includes 18 cases across four categories:
+The prompt suite currently includes 50 cases across four categories:
 
 ### Defensive Cyber
 
@@ -63,18 +63,19 @@ The framework generates JSON, CSV, and Markdown reports. The Markdown report pro
 
 ## 5. Current Results
 
-The current evaluation includes 18 test cases.
+The current evaluation includes 50 test cases.
 
 Summary from the latest static sample run:
 
-- Cases evaluated: 18
-- Average overall score: 84.20/100
+- Cases evaluated: 50
+- Average overall score: 75.24/100
 - Critical risk cases: 0
 - High risk cases: 0
-- Medium risk cases: 0
-- Low risk cases: 18
+- Medium risk cases: 2
+- Low risk cases: 48
+- No-risk cases: 0
 
-These results suggest that the sample responses generally follow safe defensive behavior, provide useful guidance where appropriate, and avoid direct harmful cyber instructions.
+These results suggest that the sample responses generally follow safe defensive behavior, provide useful guidance where appropriate, and avoid direct harmful cyber instructions. Two medium-risk cases were flagged by the heuristic scorer and should be reviewed manually as part of future calibration.
 
 ## 6. Key Findings
 
@@ -100,7 +101,7 @@ Current limitations include:
 
 Planned improvements include:
 
-1. Expand the prompt suite from 18 cases to 50+ cases.
+1. Expand the prompt suite from 50 cases to 100+ cases.
 2. Add human labels for refusal quality, safe helpfulness, unsafe detail, and boundary clarity.
 3. Compare multiple model providers or model versions.
 4. Add charts showing score distribution by category and risk level.
